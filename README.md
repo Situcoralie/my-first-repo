@@ -11,3 +11,13 @@ Here is a list:
   + Item 3
 
 For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+
+
+
+
+## Usage
+
+Play a game of rock, paper, scissors:
+```sh
+python app/rock-paper-scissors.py
+```
