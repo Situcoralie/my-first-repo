@@ -1,4 +1,4 @@
-from app.rockpaperscissors import determine_winner
+from app.rps import determine_winner
 
 def test_winner():
     assert determine_winner("rock", "rock") == "TIE GAME"

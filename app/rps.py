@@ -1,18 +1,9 @@
 #THIS IS MY ROCK PAPER SCISSORS GAME
 
-print("Welcome to my game")
-
-player_choice = input("Please select an option from 'rock', 'paper', 'scissors':")
-print("USER CHOSE:", player_choice)
-
-#todo: validation step
 
 import random
 
 VALID_OPTIONS = ['rock', 'paper', 'scissors']
-
-computer_choice = random.choice(VALID_OPTIONS)
-print("COMPUTER CHOSE:", computer_choice)
 
 def determine_winner(u, c):
     if u == c:
@@ -31,6 +22,20 @@ def determine_winner(u, c):
         result = "COMP WINS"  
     return result
 
-result_message = determine_winner(player_choice, computer_choice)
+# only run the code indented inside if we are running this script from command line
+# but not if we are importing
 
-print(result_message)
+if __name__ == "__main__":
+    print("Welcome to my game")
+
+    player_choice = input("Please select an option from 'rock', 'paper', 'scissors':")
+    print("USER CHOSE:", player_choice)
+
+
+    computer_choice = random.choice(VALID_OPTIONS)
+    print("COMPUTER CHOSE:", computer_choice)
+
+
+    result_message = determine_winner(player_choice, computer_choice)
+
+    print(result_message)
